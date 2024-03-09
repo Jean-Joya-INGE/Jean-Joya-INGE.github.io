@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOROS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+            margin: 0;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        
+        .chat-section {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .chat-section h2 {
+            color: #007bff;
+            margin-top: 0;
+        }
+        
+        .message {
+            background-color: #f9f9f9;
+            padding: 10px;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+        
+        .message p {
+            margin: 0;
+        }
+        
+        .message.user-message {
+            background-color: #d4edda;
+        }
+        
+        .message.developer-message {
+            background-color: #cce5ff;
+        }
+        
+        .message-form {
+            margin-top: 20px;
+        }
+        
+        .message-form input[type="text"],
+        .message-form textarea {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+        
+        .message-form button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        .message-form button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>FOROS</h1>
+        
+        <div class="chat-section">
+            <h2>Chat de Usuario</h2>
+            <div class="message user-message">
+                <p>Hola foro, ¿pueden ayudarme con una breve explicación de la página?</p>
+            </div>
+            <!-- Aquí puedes agregar más mensajes de usuario -->
+        </div>
+        
+        <div class="chat-section">
+            <h2>Chat de Desarrollador</h2>
+            <div class="message developer-message">
+                <p>Claro que sí.</p>
+            </div>
+            <!-- Aquí puedes agregar más mensajes de desarrollador -->
+        </div>
+        
+        <div class="message-form">
+            <input type="text" placeholder="Tu nombre">
+            <textarea placeholder="Escribe tu mensaje"></textarea>
+            <button>Enviar</button>
+        </div>
+    </div>
+</body>
+</html>
