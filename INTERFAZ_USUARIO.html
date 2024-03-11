@@ -1,23 +1,74 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta chatset="utf-8" />
-        <title>INTERFAS_USUARIO</title>
-<style>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INTERFAZ DE USUARIO</title>
+    <style>
         body {
             font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    padding: 20px;
+            background-color: #f4f4f4;
+            padding: 20px;
+            margin: 0;
         }
         
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        
+        ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+        
+        li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+        
+        li:last-child {
+            margin-right: 0;
+        }
+        
+        a {
+            text-decoration: none;
+            color: #007bff;
+            transition: color 0.3s ease;
+        }
+        
+        a:hover {
+            color: #0056b3;
+        }
     </style>
-    </head>
-    <body>
-        <h1>INTERFAS_USUARIO</h1>
+</head>
+<body>
+    <div class="container">
+        <h1>INTERFAZ DE USUARIO</h1>
         <ul>
-<li><a href="AMIGOS.html">AMIGOS</a></li>
-            <li><a href="FOROS.html">FOROS</a></li>
-            <li><a href="USUARIO.html">CERRAR_SECION</a></li>
+            <li><a href="amigos.html"><h2>AMIGOS</h2><a></li>
+            <br>
+            <img src="amigos.jpg"
+            height="300" width="300"> 
+            <br>
+            <li><a href="foros.html"><h2>FOROS<h2<a></li>
+            <br>
+            <img src="foros.jpg"
+            height="300" width="300"> 
+            <br>
+            <li><a href="usuario.html"><h2>CERRAR SESIÓN<h2></a></li>
+            <br>
+            <img src="cerrar_sesion.jpg"
+            height="300" width="300"> 
+            <br>
+
         </ul>
-    </body>
+    </div>
+</body>
 </html>
